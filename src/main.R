@@ -63,7 +63,7 @@ nuclear.compared.with.violence.plot <- function() {
     ggplot(data=df, aes(x=nuclear, y=Freq, fill=viol)) +
         geom_bar(stat="identity", position="fill") +
         # ggtitle("Country nuclear capability compared with crisis violence") +
-        xlab("\nNuclear capability of actors in crises") +
+        xlab("\n\nNuclear capability of actors in crises") +
         ylab("Frequency of level of violence in crises") +
         scale_x_discrete(labels=nuclear.names) +
         scale_y_continuous(labels=percent) +
@@ -314,8 +314,8 @@ viol.names <- c("No violence",
                 "Serious clashes",
                 "Full-scale war")
 
-nuclear.names <- c("No foreseeable\nnuclear capability",
-                   "Could build\nnuclear weapons",
+nuclear.names <- c("No foreseeable\nnuclear\ncapability",
+                   "Could build\nnuclear\nweapons",
                    "Has nuclear\nweapons",
                    "Second strike\ncapability")
 
